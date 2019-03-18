@@ -2,6 +2,7 @@
 import 'react-app-polyfill/ie9'
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
+import WebFont from 'webfontloader'
 
 // components.
 import App from './components/App'
@@ -12,6 +13,12 @@ import 'sanitize.css'
 
 // utils.
 import * as serviceWorker from './serviceWorker'
+
+WebFont.load({
+  google: {
+    families: ['Open Sans:400', 'sans-serif'],
+  },
+})
 
 ReactDOM.render(
   <Fragment>
