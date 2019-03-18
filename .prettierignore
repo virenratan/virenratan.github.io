@@ -1,0 +1,14 @@
+.git
+coverage
+build
+dist
+node_modules
+sitecore
+storybook
+.npmrc
+.yarnrc
+docs.json
+stats.json
+yarn-error.log
+yarn.lock
+package.json
