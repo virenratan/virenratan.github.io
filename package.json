@@ -12,6 +12,8 @@
     "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
+    "@emotion/core": "~10.0.9",
+    "@emotion/styled": "~10.0.9",
     "react": "~16.8.4",
     "react-app-polyfill": "~0.1.3",
     "react-dom": "~16.8.4",
@@ -48,7 +50,7 @@
     "babel-core": "~7.0.0-bridge.0",
     "babel-loader": "8.0.5",
     "babel-plugin-dynamic-import-node": "~2.2.0",
-    "babel-plugin-emotion": "~9.2.6",
+    "babel-plugin-emotion": "~10.0.9",
     "babel-plugin-import-inspector": "~2.0.0",
     "enzyme": "~3.7.0",
     "enzyme-adapter-react-16": "~1.7.0",
@@ -78,7 +80,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint-staged"
+      "pre-commit": "yarn lint-staged",
+      "pre-push": "yarn test"
     }
   },
   "lint-staged": {

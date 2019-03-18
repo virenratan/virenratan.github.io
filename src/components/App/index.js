@@ -1,28 +1,24 @@
-import React, { Component } from 'react'
-import logo from './logo.svg'
-import './App.css'
+// @flow
+import React from 'react'
+import styled from '@emotion/styled'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    )
-  }
-}
+// assets.
+import logo from './logo.svg'
+
+// styles.
+import styles from './app.styles'
+
+const AppWrapper = styled('div')(styles.App)
+const AppHeader = styled('header')(styles.AppHeader)
+const AppLogo = styled('img')(styles.AppLogo)
+
+const App = () => (
+  <AppWrapper>
+    <AppHeader>
+      <AppLogo src={logo} alt="logo" />
+      <p>Hello!</p>
+    </AppHeader>
+  </AppWrapper>
+)
 
 export default App
