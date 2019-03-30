@@ -13,7 +13,11 @@ const App = () => (
     <AppHeader>
       <h1>Viren.</h1>
       <p>Experience technologist</p>
-      <p>🤓</p>
+      <p>
+        <span role="img" aria-label="Nerd">
+          🤓
+        </span>
+      </p>
     </AppHeader>
   </AppWrapper>
 )
