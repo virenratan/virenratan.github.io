@@ -12,8 +12,11 @@ export default () => (
           "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
         WebkitFontSmoothing: 'antialiased',
         MozOsxFontSmoothing: 'grayscale',
-        // backgroundColor: '#282c34',
-        backgroundColor: '#e3e1d2',
+        /* eslint-disable no-dupe-keys */
+        background: '#16222A',
+        background: '-webkit-linear-gradient(to right, #3A6073, #16222A)',
+        background: 'linear-gradient(to right, #3A6073, #16222A)',
+        /* eslint-enable no-dupe-keys */
         fontSize: 'calc(16px + 2vmin)',
       },
       h1: {

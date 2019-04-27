@@ -13,6 +13,11 @@ const styles = {
     color: '#222',
     fontFamily: "'Open Sans', sans-serif",
   },
+
+  AppBackground: {
+    position: 'absolute',
+    top: 0,
+  },
 }
 
 export default styles
